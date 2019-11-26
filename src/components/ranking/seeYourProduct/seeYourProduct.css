@@ -1,0 +1,36 @@
+.r2s-contsiner1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    background-color: #f8f6f6!important;
+    padding: 20px 0px;
+    padding: 50px 0px;
+}
+
+.r2s-heading1 {
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+    font-weight: 700;
+    text-align: center;
+}
+
+.r2s-rankings1 {
+    border-radius: 24px;
+    padding: 9px 35px;
+    color: white;
+    background-color: rgb(109, 132, 64);
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 15px;
+    border: 1px solid transparent;
+}
+
+.r2s-rankings1:hover {
+    color: rgb(109, 132, 64);
+    background-color: white;
+    border: 1px solid rgb(109, 132, 64);
+    transition: 0.5s;
+    cursor: pointer;
+}

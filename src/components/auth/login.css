@@ -1,0 +1,23 @@
+
+.row{
+  justify-content: center;
+  margin: 100px 0px 60px 0px;
+}
+.card-header:first-child{
+  background-image: linear-gradient(to bottom right, #d1ff6e, #475823);
+  margin: -70px 0px 30px 0px;
+  box-shadow: 0px 0px 10px #475823;
+}
+.login-btn{
+  background-image: linear-gradient(to bottom right, #d1ff6e, #475823);
+  color: white;
+}
+.signup-btn{
+  background-image: linear-gradient(to bottom right, #6e90ff, #462b86);
+  padding: 8px;
+  color: aliceblue;
+  font-weight: 400;
+  border-radius: 5px;
+  margin-left: 10px;
+
+}

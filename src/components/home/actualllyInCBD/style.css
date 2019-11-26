@@ -1,0 +1,17 @@
+.acctually-container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    align-items: center;
+    background-color: #f8f6f6;
+}
+
+.acctually-container h1 {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.acctually-container p {
+    text-align: center;
+}

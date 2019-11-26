@@ -1,0 +1,131 @@
+.research-container{
+    display: flex;
+    justify-content: space-around;
+     border-bottom: 1px solid rgb(109, 132, 64);
+     margin-bottom: 10px;
+     min-height: 133px;
+     padding: 2% 12%;
+}
+/* .research{
+    width: 100px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    flex-direction: column;
+} */
+.res-p-con{
+    display: flex;
+    align-items: center;
+}
+.res-img{
+    width: 80px;
+    margin: 10px;
+}
+.research {
+    position: relative;
+    background: rgb(109, 132, 64);
+    height: 80px;
+    width: 80px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 0px;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 10px;
+}
+.research:before,
+.research:after {
+    content: '';
+    position: absolute;
+    border-bottom: 50px solid rgb(109, 132, 64);
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    top: 50px;
+    left: -10px;
+    transform: rotate(-140deg);
+    
+}
+.research:after {
+    left: auto;
+    right: -10px;
+    transform: rotate(140deg);
+}
+.research2{
+    margin-left: 10px;
+      display: flex;
+      flex-direction: column;
+      height: 92px;
+    /* background-color: rgb(188, 214, 124); */
+    padding:10px 19px;
+    align-items: center;
+    border: 1px solid rgb(109, 132, 64);
+      border-left: 0px;
+      border-top: 0px;
+      border-bottom: 0px;
+  }
+  .research2:hover  {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(109, 132, 64);
+    
+}
+.research2:hover .res-icon2 {
+ color: white;
+    
+}
+.research2:hover .research-text2 {
+    color: white;
+       
+   }
+
+
+.res-c{
+    display: flex;
+    height: 100%;
+    width: 300px;
+}
+.res-p{
+    width: 70%;
+    line-height: 1.2;
+}
+.res-icon{
+    color: white;
+    font-size: 25px;
+    margin-top: 10px;
+}
+.research-text{
+    color: white;
+    font-weight: bold;
+    position: absolute;
+    margin-top: 40px;
+    z-index: 90;
+}
+.res-icon2{
+    color: rgb(109, 132, 64);
+    font-size: 25px;
+    margin-top: 10px;
+}
+.research-text2{
+    color: rgb(109, 132, 64);
+    font-weight: bold;
+    margin-top: 4px;
+}
+@media screen and (max-width: 850px) {
+    .research2{
+        display: none;
+    }
+.res-img{
+    display: none;
+}
+
+  .res-p{
+      width: 100%;
+  }
+  .research-container{
+      height: auto;
+      padding-right: 50px;
+  }
+}

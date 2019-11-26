@@ -1,0 +1,79 @@
+.cpwork-container {
+    display: flex;
+    width: 100%;
+    height: 350px !important;
+    background-image: url("./shopcp.jpg");
+    color: white;
+    flex-direction: column;
+    align-items: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.cpwork-heading {
+    font-size: 30px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.cpwork-h2 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 5px;
+    text-align: center;
+}
+
+.cpwork-p {
+
+    text-align: center;
+    line-height: 1.3;
+}
+
+.cpwork-learn-more {
+    border-radius: 18px;
+    padding: 7px 15px;
+    background-color: white;
+    color: rgb(55, 66, 32);
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 30px;
+    border: 1px solid transparent;
+}
+
+.cpwork-learn-more:hover {
+    background-color: rgb(109, 132, 64);
+    color: white;
+    transition: 0.5s;
+    border: 1px solid white;
+    cursor: pointer;
+}
+
+.cpwork-container2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 615px;
+    padding-top: 50px;
+
+}
+
+@media screen and (max-width: 650px) {
+    .cpwork-container2 {
+        width: 320px;
+        padding-top: 20px;
+    }
+    .cpwork-heading {
+        font-size: 30px;
+    }
+}
+
+.cpcc2 {
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
