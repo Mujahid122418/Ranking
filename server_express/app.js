@@ -7,8 +7,6 @@ var errorClass= require("./utils/errClass")
 
 var prodectRouter = require('./routes/food');
 
-
-
 var usersRouter = require('./routes/users');
 var globelError= require("./controllers/errorContollers")
 var reviewRouter= require("./routes/review")
@@ -20,10 +18,7 @@ app.use(cors())
 // app.use(cors({
 //   credentials: true,
 // }));
-
 const mongoose = require("mongoose")
-
-
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -40,6 +35,7 @@ app.use(logger('dev'));
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
+// app.use(express.static(path.join(__dirname, './build')));
 // app.use(express.static(path.join(__dirname, 'public/uploads')));
 app.use('/images', express.static(__dirname + 'public/uploads'));
 app.get("/",(req,res,next)=>{
@@ -49,6 +45,13 @@ app.use('/api/users', usersRouter);
 app.use('/api/product', prodectRouter);
 app.use('/api/reveiw', reviewRouter);
 
+if (process.env.NODE_ENV === "production") {
+  app.use(express.static("./build"));
+
+  app.get("/*", (req, res) => {
+    res.sendFile(path.resolve(__dirname, "client", "build", "index.html"));
+  });
+}
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   next(new errorClass(`Your desire route is not found ${req.originalUrl}`, 404));
