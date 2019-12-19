@@ -28,9 +28,10 @@ const Comment = props => {
         <div className="cmt-user">
           {/* <div className="comment-r"> */}
             <Box component="fieldset" mb={3} borderColor="transparent">
-              <label for="comment">Comment:</label>
+              <label for="comment">Your Review</label>
               <textarea
             //   style={{width:'50%'}}
+                placeholder="Share your honest experience and help other make a better choices."
                 class="form-control"
                 onChange={e => setcomment(e.target.value)}
                 rows="4"

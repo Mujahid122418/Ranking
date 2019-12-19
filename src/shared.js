@@ -263,7 +263,7 @@ class Accounts {
 
 export const account = new Accounts();
 export const appAccountModel = new AppAccountModel();
-export const UrlApi = "http://localhost:5000/api"
+export const UrlApi = "https://fiverdemo.herokuapp.com/api/"
 export const Url = "http://localhost:5000/"
 // export const Url = 'https://mubasharserver734.herokuapp.com/';
 export const baseUrl = axios.create({ baseURL: UrlApi });

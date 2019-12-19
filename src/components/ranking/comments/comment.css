@@ -4,7 +4,7 @@
     align-items: center;
     flex-direction: column;
     padding: 10px;
-    border: 1px solid black;
+    border: 1px solid #D3D3D3;
 }
 .cmt-area{
     display: flex;
@@ -27,6 +27,15 @@
     font-weight: 600;
     text-transform: capitalize;
     margin: 20px 0px 0px 20px;
+    /* width: 850px; */
+    
+
+}
+.cmt-user .form-control{
+    width: 850px;
+    margin-right: 20px;
+    box-shadow: 0px 0px 10px green;
+
 }
 .comment-new{
     width: 850px;
@@ -54,5 +63,11 @@
         height: auto;
         margin: 10px;
         padding: 10px;
+    }
+    .cmt-user .form-control{
+        width: 310px;
+        box-shadow: 0px 0px 10px green;
+    /* margin-left: 20px; */
+       
     }
   }
