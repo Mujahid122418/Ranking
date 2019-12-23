@@ -264,9 +264,10 @@ class Accounts {
 export const account = new Accounts();
 export const appAccountModel = new AppAccountModel();
 export const UrlApi = "https://fiverdemo.herokuapp.com/api/"
-export const Url = "http://localhost:5000/"
+console.log(window.location.origin)
+export const Url = (window.location.origin==="http://localhost:3000") ?"http://localhost:5000/api/":`${window.location.origin}/api/`
 // export const Url = 'https://mubasharserver734.herokuapp.com/';
-export const baseUrl = axios.create({ baseURL: UrlApi });
+export const baseUrl = axios.create({ baseURL: Url });
 
 // eslint-disable-next-line
 
