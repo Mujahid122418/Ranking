@@ -40,7 +40,7 @@
       "not dead",
       "not op_mini all"
     ],
-    "proxy":"https://fiverdemo.herokuapp.com/",
+    "proxy":"https://localhost:5000",
     "development": [
       "last 1 chrome version",
       "last 1 firefox version",
